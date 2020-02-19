@@ -10,61 +10,58 @@ html {
 
 body {
     height: 1000px;
-    margin: 0 15px;
+    margin: 100px 15px 0 15px;
     font-family: 'DM Sans', sans-serif;
 }
 
-#content {
-    margin: 0 auto;
-    display: grid;
-    grid-column-gap: 15px;
-    grid-template-columns: repeat(12, 1fr);
-}
+/* #content {
+    width: auto;
+} */
 
 header {
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 15px;
-    border: 1px solid black;
-}
-
-header div {
-    margin: auto 0;
-    font-size: calc(.5rem + .6vw);
-    letter-spacing: 0.155em;
-    text-align: center;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 7.5px;
+    background-color: white;
+    /* border: 1px solid black; */
 }
 
 #logo {
-    grid-column: 1 / 4;
+    max-width: 25vw;
+    flex-grow: 3;
+    margin: auto 7.5px;
     font-size: calc(1.5rem + 2vw);
+    text-align: center;
 }
 
-#home {
-    grid-column: 5 / 7;
+header nav {
+    max-width: 75vw;
+    flex-grow: 9;
+    display: flex;
+    justify-content: flex-end;
 }
 
-#cart {
-    grid-column: 7 / 9;
-}
-
-#profile {
-    grid-column: 9 / 11;
-}
-
-#log-out {
-    grid-column: 11 / 13;
+header nav div {
+    margin: auto 7.5px;
+    font-size: calc(.5rem + .6vw);
+    letter-spacing: 0.155em;
+    text-align: center;
+    flex-grow: 3;
 }
 
 #sidebar {
+    width: 25vw;
     display: flex;
+    position: fixed;
     flex-flow: column;
     justify-content: flex-end;
-    grid-column: 1 / 4;
     min-height: 500px;
     padding: 15px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: calc(.5rem + .6vw);
     letter-spacing: 0.155em;
     text-align: right;
@@ -75,17 +72,19 @@ header div {
 }
 
 #main {
+    margin-left: calc(15px + 25vw);
+    max-width: 75vw;
+    min-height: 500px;
     padding: 15px;
-    grid-column: 4 / 13;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     font-size: calc(.5rem + .6vw);
 }
 
 footer {
-    /* min-height: 150px; */
-    grid-column: 1 / 13;
+    /* position: static; */
+    max-height: 150px;
     padding: 15px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-size: calc(.5rem + .6vw);
     text-align: center;
 }
