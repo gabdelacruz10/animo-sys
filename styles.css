@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    height: 1000px;
+    height: auto;
     margin: 100px 15px 0 15px;
     font-family: 'DM Sans', sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 } */
 
 header {
-    height: 100px;
+    height: 15vh;
     display: flex;
     position: fixed;
     top: 0;
@@ -34,6 +34,9 @@ header {
     max-width: 25vw;
     flex-grow: 3;
     margin: auto 7.5px;
+}
+
+#logo h1 {
     font-size: calc(1.5rem + 2vw);
     text-align: center;
 }
@@ -57,9 +60,10 @@ header nav div {
     width: 25vw;
     display: flex;
     position: fixed;
+    top: 15vh;
+    bottom: 10vh;
     flex-flow: column;
     justify-content: flex-end;
-    min-height: 500px;
     padding: 15px;
     /* border: 1px solid green; */
     font-size: calc(.5rem + .6vw);
@@ -74,21 +78,21 @@ header nav div {
 #main {
     margin-left: calc(15px + 25vw);
     max-width: 75vw;
-    min-height: 500px;
+    min-height: 1000px;
     padding: 15px;
     /* border: 1px solid orange; */
     font-size: calc(.5rem + .6vw);
 }
 
 footer {
-    /* position: static; */
-    max-height: 150px;
+    height: calc(15vh + 10px);
     padding: 15px;
-    /* border: 1px solid blue; */
+    border-top: 1px solid whitesmoke;
     font-size: calc(.5rem + .6vw);
     text-align: center;
+    height: 10vh;
 }
 
 footer p {
-    margin: auto;
+    margin: auto 15px;
 }
