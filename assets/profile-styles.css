@@ -1,0 +1,9 @@
+h1#student-name {
+    font-weight: bold;
+    font-size: calc(2.25rem + 3vw);
+    letter-spacing: -0.05em;
+}
+
+p#id-num {
+    font-size: calc(.75rem + 1vw);
+}
