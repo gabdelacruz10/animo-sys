@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/login-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display&display=swap" rel="stylesheet">
+    <title>Login | Animo.sys</title>
+</head>
+
+<body>
+    <div class="gradient-bg">
+        <div class="container">
+            <h1 id="heading">Log in</h1>
+            <form>
+                <label for="idNumber">ID NUMBER</label><br>
+                <input type="idNumber" id="idNumber" name="idNumber"><br>
+                <label for="password">PASSWORD</label><br>
+                <input type="password" id="password" name="password"><br>
+                <br>
+                <p id="errMsg"></p>
+                <br><br>
+                <div id="wrap-button">
+                    <input type="button" id="submit" onclick="validate()" value="LOG IN">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/scripts/validate.js"></script>
+</body>
+
+</html>

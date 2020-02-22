@@ -11,21 +11,14 @@ html {
 body {
     height: auto;
     font-family: 'DM Sans', sans-serif;
+    color: #021c0b;
 }
 
 /* ----------------Links---------------- */
 
-a.navlinks {
-    color: black;
+a {
+    color: inherit;
     text-decoration: none;
-}
-
-a.navlinks:hover {
-    border-bottom: 2px solid green;
-}
-
-a.navlinks:active {
-    border-bottom: 2px solid green;
 }
 
 /* ----------------Header---------------- */
@@ -39,7 +32,7 @@ header {
     left: 0;
     right: 0;
     padding: 15px 7.5px;
-    background-color: #f6fff9;
+    background-color: #2cf172;
 }
 
 #logo-wrapper {
@@ -59,15 +52,26 @@ header nav {
     align-self: center;
 }
 
-header nav ul li {
+#navlist li {
     display: inline;
-    padding: 7.5px;
     font-size: calc(.5rem + .6vw);
     letter-spacing: 0.155em;
 }
 
-#active {
-    border-bottom: 2px solid green;
+#navlist li>a {
+    padding: 7.5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+#navlist li>a:hover {
+    border: 2px solid #021c0b;
+    border-radius: 5px;
+}
+
+#navlist li>a#active {
+    border: 2px solid #021c0b;
+    border-radius: 5px;
 }
 
 /* ----------------Sidebar---------------- */
@@ -88,13 +92,17 @@ header nav ul li {
     border-right: 1px solid whitesmoke;
 }
 
-#sidebar div {
-    margin: 15px 0;
-}
-
-#sidebar ul li {
+#sidebarlist li {
     margin: 15px 0;
     list-style-type: none;
+}
+
+#sidebarlist li>a {
+    border-bottom: 2px solid transparent;
+}
+
+#sidebarlist li>a:hover {
+    border-bottom: 2px solid #2cf172;
 }
 
 /* ----------------Content---------------- */
@@ -123,12 +131,11 @@ header nav ul li {
 footer {
     height: calc(15vh + 10px);
     padding: 15px;
-    border-top: 1px solid whitesmoke;
     font-size: calc(.5rem + .6vw);
     text-align: center;
     height: 10vh;
-    background-color: #97F0B6;
-    color: black;
+    background-color: #021c0b;
+    color: whitesmoke;
 }
 
 footer p {

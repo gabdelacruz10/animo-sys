@@ -4,5 +4,5 @@ $(document).ready(function () {
     $('#template').load(template);
 
     $('footer').html('<p>© CCAPDEV X22 Team 3 <br> Dela Cruz, Gubat, Ramos</p>');
-    
+
 });
