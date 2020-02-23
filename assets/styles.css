@@ -32,19 +32,18 @@ header {
     left: 0;
     right: 0;
     padding: 15px 7.5px;
-    background-color: #2cf172;
+    background-color: white;
+    border-top: 5px solid #2cf172;
 }
 
 #logo-wrapper {
-    max-width: 25vw;
-    max-height: 15vh;
-    max-height: inherit;
+    max-width: 20vw;
 }
 
 img#logo {
     background-size: contain;
     max-height: 100%;
-    margin: auto 7.5px;
+    margin: auto;
 }
 
 header nav {
@@ -89,7 +88,7 @@ header nav {
     letter-spacing: 0.155em;
     text-align: right;
     background-color: white;
-    border-right: 1px solid whitesmoke;
+    /* border-right: 1px solid whitesmoke; */
 }
 
 #sidebarlist li {
