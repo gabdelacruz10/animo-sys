@@ -34,6 +34,7 @@ header {
     padding: 15px 7.5px;
     background-color: white;
     border-top: 5px solid #2cf172;
+    box-shadow: 0px 2px 18px 0px #3e423f;
 }
 
 #logo-wrapper {
@@ -79,7 +80,6 @@ header nav {
     width: 20vw;
     display: flex;
     position: fixed;
-    top: 15vh;
     bottom: 0;
     flex-flow: column;
     justify-content: flex-end;
