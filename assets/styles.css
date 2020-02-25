@@ -14,6 +14,40 @@ body {
     color: #021c0b;
 }
 
+/* ----------------Font-size---------------- */
+
+.res-8 {
+    font-size: calc(.25rem + .333vw);
+}
+
+.res-10 {
+    font-size: calc(.3125rem + .417vw);
+}
+
+.res-12 {
+    font-size: calc(.375rem + .5vw);
+}
+
+.res-16 {
+    font-size: calc(.5rem + .666vw);
+}
+
+.res-24 {
+    font-size: calc(.75rem + 1vw);
+}
+
+.res-36 {
+    font-size: calc(1.125rem + 1.5vw);
+}
+
+.res-54 {
+    font-size: calc(1.6875rem + 2.25vw);
+}
+
+.res-72 {
+    font-size: calc(2.25rem + 3vw);
+}
+
 /* ----------------Links---------------- */
 
 a {
@@ -54,7 +88,6 @@ header nav {
 
 #navlist li {
     display: inline;
-    font-size: calc(.5rem + .6vw);
     letter-spacing: 0.155em;
 }
 
@@ -65,12 +98,14 @@ header nav {
 }
 
 #navlist li>a:hover {
-    border: 2px solid #021c0b;
+    color: #2cf172;
+    border: 2px solid #2cf172;
     border-radius: 5px;
 }
 
 #navlist li>a#active {
-    border: 2px solid #021c0b;
+    color: #2cf172;
+    border: 2px solid #2cf172;
     border-radius: 5px;
 }
 
@@ -84,7 +119,6 @@ header nav {
     flex-flow: column;
     justify-content: flex-end;
     padding: 15px;
-    font-size: calc(.5rem + .6vw);
     letter-spacing: 0.155em;
     text-align: right;
     background-color: white;
@@ -108,17 +142,13 @@ header nav {
 
 #content {
     margin: 15vh 0 0 20vw;
+    background-color: #f6fef9;
 }
 
 #main {
     padding: 3em;
     max-width: 75vw;
     min-height: 1000px;
-    font-size: calc(.5rem + .6vw);
-}
-
-#main h1 {
-    font-size: calc(1.125rem + 1.5vw);
 }
 
 #main p {
@@ -130,7 +160,6 @@ header nav {
 footer {
     height: calc(15vh + 10px);
     padding: 15px;
-    font-size: calc(.5rem + .6vw);
     text-align: center;
     height: 10vh;
     background-color: #021c0b;

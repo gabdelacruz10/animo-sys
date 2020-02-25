@@ -1,6 +1,6 @@
 h1#student-name {
     font-weight: bold;
-    font-size: calc(2.25rem + 3vw);
+    /* font-size: calc(2.25rem + 3vw); */
     letter-spacing: -0.05em;
 }
 

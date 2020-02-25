@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    font-size: calc(.375rem + 0.5vw);
     color: #373B44;
 }
 
@@ -31,18 +30,16 @@ h1 {
     padding: 3rem;
     border-radius: 20px;
     margin: 0 auto;
-    max-width: 25vw;
+    max-width: 45vw;
     max-height: 95vh;
     overflow: hidden;
 }
 
 .container #heading {
     text-align: center;
-    font-size: calc(1.6875rem + 2.25vw);
 }
 
 .container label {
-    font-size: calc(0.25rem + 0.333vw);
     line-height: 23px;
     letter-spacing: 0.095em;
 }
@@ -50,7 +47,6 @@ h1 {
 .container input {
     outline: none;
     font-family: inherit;
-    font-size: calc(.375rem + 0.5vw);
     width: 100%;
     padding: 5px;
     border: 1px solid #373b4485;
@@ -63,7 +59,6 @@ h1 {
 
 .container #submit {
     color: white;
-    font-size: calc(0.25rem + 0.333vw);
     font-weight: bold;
     line-height: 23px;
     letter-spacing: 0.195em;
@@ -76,6 +71,10 @@ h1 {
 .container #submit:hover {
     color: #50F289;
     background-color: white;
+}
+
+.container #login-mod {
+    text-align: right;
 }
 
 /* ----------------Responsive---------------- */
