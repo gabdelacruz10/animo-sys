@@ -43,7 +43,7 @@ function validateModLogin() {
     }
 
     if (err == 0) {
-        window.location.href = '/index.html';
+        window.location.href = '/index-mod.html';
     } else {
         username.style.borderColor = bg;
         password.style.borderColor = bg;
