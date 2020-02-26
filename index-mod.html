@@ -99,33 +99,7 @@
         </footer>
     </div>
 
-    <script>
-        var rows = document.getElementsByTagName('tr');
-
-
-        for (let i = 1; i < rows.length; i++) {
-            console.log(rows[i].children);
-            var row = rows[i];
-            var cell = row.insertCell(-1);
-            var text = document.createTextNode('Remove');
-
-            cell.appendChild(text);
-            cell.style.border = 'none';
-
-            // Still figuring out how to remove a row
-            cell.addEventListener('click', function() {
-                console.log(cell.closest('tr'));
-            })
-        };
-
-        for(let i = 1; i < rows.length; i++) {
-
-        }
-        
-        var table = document.getElementsByTagName('table');
-        
-
-    </script>
+    <script src='scripts/table-scripts.js' type='text/javascript'></script>
 </body>
 
 </html>

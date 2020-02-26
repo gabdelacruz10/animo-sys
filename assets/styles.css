@@ -14,6 +14,33 @@ body {
     color: #021c0b;
 }
 
+/* ----------------Tables---------------- */
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #021c0b;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+/* ----------------Buttons---------------- */
+
+/* TODO: Change button font-family globally */
+
+button {
+    padding: 5px;
+}
+
 /* ----------------Font-size---------------- */
 
 .res-8 {
