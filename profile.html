@@ -133,48 +133,54 @@
             
             <div id="Finance" class="tabcontent">
 	
-                <script>
-                var issue = ["01-05-2020"];
-                var amount = ["P0.50"];
-                var hold = ["No"];
-                var Scholarship = "Gokongwei Grants";
+		<script>
+		var issue = ["01-05-2020"];
+		var amount = [];
+		var hold = ["No"];
+		var Scholarship = "St. Mutien Marie Scholarship Grant";
 
-                document.write("<h3>Clearance</h3><table><tr><th>Issue Date</th><th>Amount</th><th>Erollment Hold</th></tr>");
-                for(i=0;i<issue.length;i++)
-                        {
-                            document.write("<tr><td>" + issue[i] + "</td>");
-                            document.write("<td>" + amount[i] + "</td>");
-                            document.write("<td>" + hold[i] + "</td></tr>");
+		document.write("<h3>Clearance</h3>");
+		if(amount.length == 0)
+		{
+			document.write("<p>You have no unsettled balances</p>");
+		}
+		else{
+			document.write("<table><tr><th>Issue Date</th><th>Amount</th><th>Erollment Hold</th></tr>");
+			for(i=0;i<issue.length;i++)
+			{
+				document.write("<tr><td>" + issue[i] + "</td>");
+				document.write("<td>" + amount[i] + "</td>");
+				document.write("<td>" + hold[i] + "</td></tr>");
+			}
+			document.write("</table>");
+		}
+		document.write("<br><h3>Scholarship</h3>");
+		document.write("<h4>" + Scholarship + "</h4>");
+		if(Scholarship=="St. Mutien Marie Scholarship Grant"){
+			document.write("<p> Enjoy 50% discount on tuition (excluding miscellaneous and other fees). </p>");}
+		else if(Scholarship=="Archer Achiever Scholarship"){
+			document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of the undergraduate program (excluding ladderized baccalaureate-master’s programs).</li>");
+			document.write("<li>Other privileges such as advance enrollment, waiver of adjustment fee, and waiver of graduation fees.</li>");
+			document.write("<li>All forms of allowances are not part of the benefits</li></ul>");}
+		else if(Scholarship=="Star Scholars"){
+			document.write("<p> Enjoy:</p><ul><li>Full waiver on tuition, miscellaneous, and laboratory fees throughout their stay in the University</li>");
+			document.write("<li>receive a monthly stipend of Php 10,500 to cover transportation, books, other academic-related materials and school activities, and accommodation allowance</li></ul>");
+			}
+		else if(Scholarship=="Vaugirard Scholarship"){
+			document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of the undergraduate program (excluding ladderized baccalaureate-master’s programs).</li>");
+			document.write("<li>Monthly stipend of Php 10,000 broken down as follows: (Php 4,000.00 accommodation, Php 4,000.00 allowance and Php 2,000 meal subsidy) for the entire duration of the program. The accommodation benefit will be disbursed provided that the scholar presents an official Contract of Rent from his/her lessor.</li>");
+			document.write("<li>An incentive equivalent to the stipend for one (1) month for those graduating with Latin honors.</li></ul>");}
+		else if(Scholarship=="Gokongwei Grants"){
+			document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous, and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of any undergraduate program in the Gokongwei College of Engineering (excluding ladderized baccalaureate-master’s programs)</li>");
+			document.write("<li>Monthly stipend of Php 10,000 broken down as follows: (Php 4,000.00 accommodation, Php 4,000.00 allowance and Php 2,000 meal subsidy) for the entire duration of the program. The accommodation benefit will be disbursed provided that the scholar presents an official Contract of Rent from his/her lessor.</li>");
+			document.write("<li>An incentive equivalent to the stipend for one (1) month for those graduating with Latin honors.</li></ul>");}
+		else{
+			document.write("<br>");
+		}
 
-                        }
-                document.write("</table>");
-                document.write("<br><h3>Scholarship</h3>");
-                document.write("<h4>" + Scholarship + "</h4>");
-                if(Scholarship=="St. Mutien Marie Scholarship Grant"){
-                    document.write("<p> Enjoy 50% discount on tuition (excluding miscellaneous and other fees). </p>");}
-                else if(Scholarship=="Archer Achiever Scholarship"){
-                    document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of the undergraduate program (excluding ladderized baccalaureate-master’s programs).</li>");
-                    document.write("<li>Other privileges such as advance enrollment, waiver of adjustment fee, and waiver of graduation fees.</li>");
-                    document.write("<li>All forms of allowances are not part of the benefits</li></ul>");}
-                else if(Scholarship=="Star Scholars"){
-                    document.write("<p> Enjoy:</p><ul><li>Full waiver on tuition, miscellaneous, and laboratory fees throughout their stay in the University</li>");
-                    document.write("<li>receive a monthly stipend of Php 10,500 to cover transportation, books, other academic-related materials and school activities, and accommodation allowance</li></ul>");
-                    }
-                else if(Scholarship=="Vaugirard Scholarship"){
-                    document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of the undergraduate program (excluding ladderized baccalaureate-master’s programs).</li>");
-                    document.write("<li>Monthly stipend of Php 10,000 broken down as follows: (Php 4,000.00 accommodation, Php 4,000.00 allowance and Php 2,000 meal subsidy) for the entire duration of the program. The accommodation benefit will be disbursed provided that the scholar presents an official Contract of Rent from his/her lessor.</li>");
-                    document.write("<li>An incentive equivalent to the stipend for one (1) month for those graduating with Latin honors.</li></ul>");}
-                else if(Scholarship=="Gokongwei Grants"){
-                    document.write("<p> Enjoy:</p><ul><li>Full waiver of tuition, miscellaneous, and other fees (as indicated on the Enrollment Assessment Form) from the first term until the conclusion of any undergraduate program in the Gokongwei College of Engineering (excluding ladderized baccalaureate-master’s programs)</li>");
-                    document.write("<li>Monthly stipend of Php 10,000 broken down as follows: (Php 4,000.00 accommodation, Php 4,000.00 allowance and Php 2,000 meal subsidy) for the entire duration of the program. The accommodation benefit will be disbursed provided that the scholar presents an official Contract of Rent from his/her lessor.</li>");
-                    document.write("<li>An incentive equivalent to the stipend for one (1) month for those graduating with Latin honors.</li></ul>");}
-                else{
-                    document.write("<br>");
-                }
-
-                document.write("<p> For more information click <a href='https://www.dlsu.edu.ph/admissions/scholarships/#1516096919687-b29e5a84-9bfa'>here<\p>");
-                </script> 
-            </div>
+		document.write("<p> For more information click <a href='https://www.dlsu.edu.ph/admissions/scholarships/#1516096919687-b29e5a84-9bfa'>here<\p>");
+		</script> 
+	</div>
             <script>
                 function openInfo(evt, infoName) {
                     var i, tabcontent, tablinks;
