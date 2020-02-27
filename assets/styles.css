@@ -41,7 +41,7 @@ button {
     padding: 5px;
 }
 
-/* ----------------Font-size---------------- */
+/* ----------------Font-sizes---------------- */
 
 .res-8 {
     font-size: calc(.25rem + .333vw);
@@ -175,9 +175,11 @@ header nav {
     background-color: #f6fef9;
 }
 
+/* TODO: remove margin-right */
+
 #main {
-    padding: 3em;
     max-width: 75vw;
+    padding: 3em;
     min-height: 1000px;
 }
 
