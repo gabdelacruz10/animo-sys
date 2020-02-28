@@ -15,3 +15,10 @@ for (let i = 1; i < rows.length; i++) {
 $("button").click(function () {
     $(this).closest('tr').remove();
 });
+
+
+function deleteRow(button) {
+    $(button).click(function() {
+        $(this).closest('tr').remove();
+    })
+};

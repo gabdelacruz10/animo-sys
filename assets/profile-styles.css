@@ -11,8 +11,6 @@ p#id-num {
 
 .tab {
     overflow: auto;
-    /* border: 1px solid #ccc; */
-    /* background-color: #f1f1f1;*/
 }
 
 /* Style the buttons inside the tab */
@@ -43,7 +41,7 @@ p#id-num {
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    /* padding: 6px 12px; */
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 }
@@ -68,12 +66,25 @@ p#id-num {
     }
 }
 
-table {
-    width: 30%;
-    border: 1px solid black;
+/* ----------------Personal Information---------------- */
+
+#info-container {
+    display: flex;
 }
 
-td, th {
-    text-align: center;
-    border: 1px solid black
+#profile-pic {
+    max-width: 2in;
+    max-height: 2in;
+    flex-grow: 3;
+}
+
+#profile-pic img {
+    width: 2in;
+}
+
+#student-info {
+    flex-grow: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

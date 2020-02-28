@@ -59,12 +59,24 @@ button {
     font-size: calc(.5rem + .666vw);
 }
 
+.res-18 {
+    font-size: calc(.5625rem + .0075vw);
+}
+
+.res-20 {
+    font-size: calc(.625rem + .833vw);
+}
+
 .res-24 {
     font-size: calc(.75rem + 1vw);
 }
 
 .res-36 {
     font-size: calc(1.125rem + 1.5vw);
+}
+
+.res-48 {
+    font-size: calc(1.5rem + 2vw);
 }
 
 .res-54 {

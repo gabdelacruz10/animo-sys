@@ -51,3 +51,7 @@ function validateModLogin() {
         errMsg.innerHTML = "Invalid Username/Password.";
     }
 }
+
+function checkField(field) {
+    
+}
