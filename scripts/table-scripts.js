@@ -13,12 +13,12 @@ for (let i = 1; i < rows.length; i++) {
 
 // delete specific row
 $("button").click(function () {
-    $(this).closest('tr').remove();
+    var input;
+    if (input = confirm('Are you sure? All records of the student will be permanently deleted.')) {
+        $(this).closest('tr').remove();
+    }
+    console.log(input);
+
 });
 
 
-function deleteRow(button) {
-    $(button).click(function() {
-        $(this).closest('tr').remove();
-    })
-};
