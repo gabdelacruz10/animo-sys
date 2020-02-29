@@ -14,7 +14,17 @@ body {
     color: #021c0b;
 }
 
+/* ----------------Lists---------------- */
+
+li {
+    list-style: none;
+}
+
 /* ----------------Tables---------------- */
+
+.table-container {
+    overflow: auto;
+}
 
 table {
     width: 100%;
