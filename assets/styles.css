@@ -209,6 +209,10 @@ header nav {
     line-height: 2em;
 }
 
+#main a {
+    border-bottom: 2px solid #2cf172;
+    
+}
 /* ----------------Footer---------------- */
 
 footer {
