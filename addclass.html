@@ -30,6 +30,7 @@
                         <th>Course Name</th>
                         <th>Section</th>
                         <th>Day/Time</th>
+                        <th>Room</th>
                         <th>Professor</th>
                         <th>Status</th>
                     </tr>
@@ -52,14 +53,14 @@
                 $(this).parents('tr').remove();
             });
         });
-        var sample = { nbr: "123456", name: "GERIZAL", section: "X21", time: "MW 0730-0900", prof: "", stat: "Open" };
+        var sample = { nbr: "123456", name: "GERIZAL", section: "X21", time: "MW 0730-0900", room: "GT200", prof: "", stat: "Open" };
         var course = [
-            { nbr: "111111", name: "CSARCH1", section: "X22", time: "MW 0915-1045", prof: "PERADILLA, M.", stat: "Open" },
-            { nbr: "222222", name: "GEETHIC", section: "X22", time: "MW 1245-1415", prof: "ESTEVES, M.", stat: "Open" },
-            { nbr: "333333", name: "STMATH", section: "X22", time: "TH 0730-0900", prof: "LAWAS, C.", stat: "Open" },
-            { nbr: "444444", name: "STALGCM", section: "X22", time: "TH 0915-1045", prof: "AZCARRAGA, A.", stat: "Open" },
-            { nbr: "555555", name: "CCAPDEV", section: "X22", time: "TH 1100-1230", prof: "ANTIOQUIA, A.", stat: "Closed" },
-            { nbr: "666666", name: "GESPORT", section: "X22", time: "T 1300-1500", prof: "CALABIO, V.", stat: "Open" }
+            { nbr: "111111", name: "CSARCH1", section: "X22", time: "MW 0915-1045", room:"GT201", prof: "PERADILLA, M.", stat: "Open" },
+            { nbr: "222222", name: "GEETHIC", section: "X22", time: "MW 1245-1415", room:"GT202", prof: "ESTEVES, M.", stat: "Open" },
+            { nbr: "333333", name: "STMATH", section: "X22", time: "TH 0730-0900", room:"GT203", prof: "LAWAS, C.", stat: "Open" },
+            { nbr: "444444", name: "STALGCM", section: "X22", time: "TH 0915-1045", room:"GT204", prof: "AZCARRAGA, A.", stat: "Open" },
+            { nbr: "555555", name: "CCAPDEV", section: "X22", time: "TH 1100-1230", room:"GT205", prof: "ANTIOQUIA, A.", stat: "Closed" },
+            { nbr: "666666", name: "GESPORT", section: "X22", time: "T 1300-1500", room:"GT206", prof: "CALABIO, V.", stat: "Open" }
         ];
 
         for (i = 0; i < course.length; i++) {
